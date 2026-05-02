@@ -1,0 +1,4 @@
+venv/
+.env
+gastos.csv
+__pycache__/
