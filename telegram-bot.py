@@ -16,7 +16,7 @@ telegram_bot = telegram.TeleBot(TOKEN)
 # LECTURA Y ANÁLISIS
 @telegram_bot.message_handler(commands=["reporte"])
 def enviar_reporte(mensaje):
-    today = dt.datetime.today()
+    today = dt.date.today()
     actual_year = today.year
     actual_month = today.month
     reporte_gastos = {}
