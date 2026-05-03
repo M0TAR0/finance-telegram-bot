@@ -26,7 +26,7 @@ def enviar_reporte(mensaje):
 
         next(reader)
         for gasto in reader:
-            gasto_fecha = dt.datetime.fromisoformat(gasto[0])
+            gasto_fecha = dt.date.fromisoformat(gasto[0])
             gasto_monto = float(gasto[1])
             gasto_categoria = gasto[2]
 
