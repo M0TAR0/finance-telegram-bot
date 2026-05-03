@@ -54,7 +54,7 @@ def enviar_reporte(mensaje):
 @telegram_bot.message_handler(func=lambda _: True)
 def agregar_gasto(mensaje):
     # VARIALES GLOBALES
-    today = dt.datetime.today()
+    today = dt.date.today()
     texto = mensaje.text
 
     informacion_gastos = texto.split(maxsplit=2)
